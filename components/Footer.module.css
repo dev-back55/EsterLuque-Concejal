@@ -11,5 +11,6 @@
  @media screen and (max-width: 600px) {
     .footer_container {
         text-align: center;
+        font-size: 0.8rem;
     }
  }

@@ -68,18 +68,24 @@ export default function Navbar() {
             </div>
 
             <div className={styles.redes_container}>
-                <Image 
-                    src="/instagram.png"
-                    width={25}
-                    height={25}
-                    alt=""
-                />
-                <Image 
-                    src="/facebook.png"
-                    width={25}
-                    height={25}
-                    alt=""
-                />
+                <a href="https://www.instagram.com/esterluquerawson/" target="_blank" rel="noreferrer">
+                        <i className="fab fa-instagram instagram"></i>
+                    <Image 
+                        src="/instagram.png"
+                        width={25}
+                        height={25}
+                        alt=""
+                    />
+                </a>
+                   
+                <a href="https://www.facebook.com/ConsejalEster?mibextid=ZbWKwL" target="_blank" rel="noreferrer">
+                    <Image 
+                        src="/facebook.png"
+                        width={25}
+                        height={25}
+                        alt=""
+                    />
+                </a>
             </div>
 
         </div>
