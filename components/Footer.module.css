@@ -6,3 +6,10 @@
     width: 100%;
     background-color: rgb(101, 103, 103);
 }
+
+ /* Mobile */
+ @media screen and (max-width: 600px) {
+    .footer_container {
+        text-align: center;
+    }
+ }
