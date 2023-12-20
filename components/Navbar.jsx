@@ -69,8 +69,8 @@ export default function Navbar() {
 
             <div className={styles.redes_container}>
                 <a href="https://www.instagram.com/esterluquerawson/" target="_blank" rel="noreferrer">
-                        <i className="fab fa-instagram instagram"></i>
-                    <Image 
+                        
+                    <Image className={styles.imgItem}
                         src="/instagram.png"
                         width={25}
                         height={25}
@@ -79,7 +79,7 @@ export default function Navbar() {
                 </a>
                    
                 <a href="https://www.facebook.com/ConsejalEster?mibextid=ZbWKwL" target="_blank" rel="noreferrer">
-                    <Image 
+                    <Image className={styles.imgItem}
                         src="/facebook.png"
                         width={25}
                         height={25}
