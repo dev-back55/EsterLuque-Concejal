@@ -33,6 +33,19 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.toggle_mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.imgItem {
+  background-color: white;
+  border-radius: 8px;
+}
+
 .imgItem:hover {
   background-color: rgb(141, 20, 234);
   border-radius: 8px;

@@ -1,6 +1,7 @@
 import { Noto_Serif, Merriweather, Roboto_Slab, Ubuntu } from 'next/font/google'
 import './globals.css'
 import Footer from '../../components/Footer';
+import Providers from './Providers'
 
 const notoserif = Noto_Serif({ subsets: ['latin'], weight: ['400'] });
 const merriweather = Merriweather({ subsets: ['latin'], weight: ['400', '700'] });
@@ -17,8 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${ubuntu.className} antialiased`}>
-        {children}
-        <Footer/>
+        <Providers>
+          {children}
+          <Footer/>
+        </Providers>
       </body>
     </html>
   )

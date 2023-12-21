@@ -3,24 +3,27 @@ import { useState } from "react";
 import Image from 'next/image';
 import styles from './Navbar.module.css';
 import Link from "next/link";
+import { FiMoon } from 'react-icons/fi';
+import { BsSun } from 'react-icons/bs';
+import { useTheme } from "next-themes";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+    const { theme, setTheme } = useTheme();
 
     return (
         <div className={styles.navbar_container}>
 
             <div className={styles.logo_container}>
-            <Image 
-                src="/ms-icon-70x70.png"
-                width={70}
-                height={70}
-              
-                alt=""
-            />
-            <span>Ester Luque</span>
+                <Image 
+                    src="/ms-icon-70x70.png"
+                    width={70}
+                    height={70}
+                
+                    alt=""
+                />
+                <span>Ester Luque</span>
             </div>
-
             <div className={styles.menu_container}>
             
                 <ul className={styles.list}>
@@ -86,6 +89,14 @@ export default function Navbar() {
                         alt=""
                     />
                 </a>
+            </div>
+
+            <div className={styles.toggle_mode}>
+                {theme === "dark" ? (
+                    <BsSun size={25} cursor="pointer" onClick={() => setTheme("light")} />
+                ) : (
+                    <FiMoon size={25} cursor="pointer" onClick={() => setTheme("dark")}/> 
+                )}
             </div>
 
         </div>
