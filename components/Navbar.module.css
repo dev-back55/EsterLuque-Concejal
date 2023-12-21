@@ -68,9 +68,10 @@
 
 .hamburger {
     display: none;
-    width: 25px;
-    height: 20px;
+    width: auto;
+    height: auto;
     cursor: pointer;
+    
   }
   
   .line {
@@ -91,7 +92,7 @@
     margin: 0;
     padding: 0;
     font-weight: bold;
-    color: var(--texto-footer-color);
+    
     list-style: none;
     transition: all 1s ease;
   }
@@ -121,7 +122,7 @@
     }
 
     .menuItem:hover {
-      color: azure;
+      color: rgb(252, 252, 253);
     }
   
     .callButton {

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from "./Hero.module.css"
 import { Merriweather, Lobster } from 'next/font/google'
 
@@ -11,12 +11,16 @@ export default function Hero() {
         <div className={styles.hero_container}>
             <div className={styles.image_container}>
 
-                <Image 
+                <Image
                     src="/ester1-removebg.png"
                     width={500}
                     height={400}
                     alt=""
-                    layout='responsive'
+                    sizes="100vw"
+                    style={{
+                        width: "100%",
+                        height: "auto"
+                    }}
                 />
             </div>
             <div className={styles.text_container}>
@@ -24,5 +28,5 @@ export default function Hero() {
 
             </div>
         </div>
-    )
+    );
 }
