@@ -24,7 +24,7 @@ export default function Hero() {
                 />
             </div>
             <div className={styles.text_container}>
-                <p className={`${lobster.className}`}>Hola, soy Ester Luque, una líder comprometida y apasionada que trabaja incansablemente para mejorar la calidad de vida en Rawson. Como su representante en el Concejo Deliberante, estaré dedicada a servir a la comunidad y abogar por un futuro mejor. ¡Viva la Libertad!</p>
+                <p className={`${lobster.className}`}>Hola, soy Ester Luque, una persona comprometida y apasionada que trabaja incansablemente para mejorar la calidad de vida en Rawson. Como su representante en el Concejo Deliberante, estaré dedicada a servir a la comunidad y abogar por un futuro mejor. ¡Viva la Libertad!</p>
 
             </div>
         </div>
