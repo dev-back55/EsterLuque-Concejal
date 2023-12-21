@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react";
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import styles from './Navbar.module.css';
 import Link from "next/link";
 import { FiMoon } from 'react-icons/fi';
